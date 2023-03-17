@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5570405cdc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <H1>MakeUP</H1>
+        </div>
+
+        <div class="search" id="search">
+            <span id="logo" class="input"><i class="fa-brands fa-searchengin"></i></span>
+            <input type="text" placeholder="Search" id="inputbox">
+            <span id="profile"> <i class="fa-solid fa-user"></i> Login</span>
+        </div>
+        <label id="Filter">
+            Filters
+        </label>
+
+        <div class="container text-center" id="checkbox">
+            <div class="row row-cols-4">
+                <div class="col">
+                    <label>
+                        <h4>Product</h4>
+                    </label>
+                    <div class="form-check" style="overflow-y:auto;">
+
+                        <input class="form-check-input" type="checkbox" value="product_type=Blush" id="Blush">
+                        <label class="form-check-label" for="flexCheckDefault">Blush</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Bronzer" id="Bronzer">
+                        <label class="form-check-label" for="flexCheckDefault">Bronzer</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Eyebrow" id="Eyebrow">
+                        <label class="form-check-label" for="flexCheckDefault">Eyebrow</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Eyeliner" id="Eyeliner">
+                        <label class="form-check-label" for="flexCheckDefault">Eyeliner</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Eyeshadow" id="Eyeshadow">
+                        <label class="form-check-label" for="flexCheckDefault">Eyeshadow</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Foundation" id="Foundation">
+                        <label class="form-check-label" for="flexCheckDefault">Foundation</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Lip liner" id="Lip liner">
+                        <label class="form-check-label" for="flexCheckDefault">Lip liner</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Lipstick" id="Lipstick">
+                        <label class="form-check-label" for="flexCheckDefault">Lipstick</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Mascara" id="Mascara">
+                        <label class="form-check-label" for="flexCheckDefault">Mascara</label><br>
+                        <input class="form-check-input" type="checkbox" value="product_type=Nail polish" id="Nail polish">
+                        <label class="form-check-label" for="flexCheckDefault">Nail polish</label>
+
+                    </div>
+                </div>
+                    <div class="col">
+                     <label><h4>Brand</h4></label>
+                        <div class="form-check" style="overflow-y:auto;">
+                        <input class="form-check-input" type="checkbox" value="brand=almay" id="almay">
+                        <label class="form-check-label" for="flexCheckDefault">almay</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=alva" id="alva">
+                        <label class="form-check-label" for="flexCheckDefault">alva</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=anna sui" id="anna sui">
+                        <label class="form-check-label" for="flexCheckDefault">anna sui</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=benefit" id="benefit">
+                        <label class="form-check-label" for="flexCheckDefault">benefit</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=boosh" id="boosh">
+                        <label class="form-check-label" for="flexCheckDefault">boosh</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=burt's bees" id="burt's bees">
+                        <label class="form-check-label" for="flexCheckDefault">burt's bees</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=butter london" id="butter london">
+                        <label class="form-check-label" for="flexCheckDefault">butter london</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=c'est moi" id="c'est moi">
+                        <label class="form-check-label" for="flexCheckDefault">c'est moi</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=cargo cosmetics"id="cargo cosmetics">
+                        <label class="form-check-label" for="flexCheckDefault">cargo cosmetics</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=china glaze" id="china glaze">
+                        <label class="form-check-label" for="flexCheckDefault">china glaze</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=clinique" id="clinique">
+                        <label class="form-check-label" for="flexCheckDefault">clinique</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=coastal classic creation"id="coastal classic creation">
+                        <label class="form-check-label" for="flexCheckDefault">coastal classic creation</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=colourpop"id="colourpop">
+                        <label class="form-check-label" for="flexCheckDefault">colourpop</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=covergirl"id="covergirl">
+                        <label class="form-check-label" for="flexCheckDefault">covergirl</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=dalish" id="dalish">
+                        <label class="form-check-label" for="flexCheckDefault">dalish</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=deciem" id="deciem">
+                        <label class="form-check-label" for="flexCheckDefault">deciem</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=dior" id="dior">
+                        <label class="form-check-label" for="flexCheckDefault">dior</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=e.l.f." id="e.l.f.">
+                        <label class="form-check-label" for="flexCheckDefault">e.l.f.</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=essie" id="essie">
+                        <label class="form-check-label" for="flexCheckDefault">essie</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=fenty" id="fenty">
+                        <label class="form-check-label" for="flexCheckDefault">fenty</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=glossier" id="glossier">
+                        <label class="form-check-label" for="flexCheckDefault">glossier</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=green people"id="green people">
+                        <label class="form-check-label" for="flexCheckDefault">green people</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=iman" id="iman">
+                        <label class="form-check-label" for="flexCheckDefault">iman</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=l'oreal" id="l'oreal">
+                        <label class="form-check-label" for="flexCheckDefault">l'oreal</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=lotus cosmetics usa"id="lotus cosmetics usa">
+                        <label class="form-check-label" for="flexCheckDefault">lotus cosmetics usa</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=maia's mineral galaxy"id="maia's mineral galaxy">
+                        <label class="form-check-label" for="flexCheckDefault">maia's mineral galaxy</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=marienatie" id="marienatie">
+                        <label class="form-check-label" for="flexCheckDefault">marienatie</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=marcelle" id="marcelle">
+                        <label class="form-check-label" for="flexCheckDefault">marcelle</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=maybelline" id="maybelline">
+                        <label class="form-check-label" for="flexCheckDefault">maybelline</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=milani" id="milani">
+                        <label class="form-check-label" for="flexCheckDefault">milani</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=mineral fusion"id="mineral fusion">
+                        <label class="form-check-label" for="flexCheckDefault">mineral fusion</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=misa" id="misa">
+                        <label class="form-check-label" for="flexCheckDefault">misa</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=mistura" id="mistura">
+                        <label class="form-check-label" for="flexCheckDefault">mistura</label><br><input class="form-check-input" type="checkbox" value="brand=moov" id="moov">
+                        <label class="form-check-label" for="flexCheckDefault">moov</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=nudus" id="nudus">
+                        <label class="form-check-label" for="flexCheckDefault">nudus</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=nyx" id="nyx">
+                        <label class="form-check-label" for="flexCheckDefault">nyx</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=orly" id="orly">
+                        <label class="form-check-label" for="flexCheckDefault">orly</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=pacifica" id="pacifica">
+                        <label class="form-check-label" for="flexCheckDefault">pacifica</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=penny lane organics"id="penny lane organics">
+                        <label class="form-check-label" for="flexCheckDefault">penny lane organics</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=physicians formula"id="physicians formula">
+                        <label class="form-check-label" for="flexCheckDefault">physicians formula</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=piggy paint" id="piggy paint">
+                        <label class="form-check-label" for="flexCheckDefault">piggy paint</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=pure anada" id="pure anada">
+                        <label class="form-check-label" for="flexCheckDefault">pure anada</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=rejuva minerals"id="rejuva minerals">
+                        <label class="form-check-label" for="flexCheckDefault">rejuva minerals</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=revlon" id="revlon">
+                        <label class="form-check-label" for="flexCheckDefault">revlon</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=sally b's skin yummies"id="sally b's skin yummies">
+                        <label class="form-check-label" for="flexCheckDefault">sally b's skin yummies</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=salon perfect"id="salon perfect">
+                        <label class="form-check-label" for="flexCheckDefault">salon perfect</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=sante" id="sante">
+                        <label class="form-check-label" for="flexCheckDefault">sante</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=sinful colours" id="sinful colours">
+                        <label class="form-check-label" for="flexCheckDefault">sinful colours</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=smashbox" id="smashbox">
+                        <label class="form-check-label" for="flexCheckDefault">smashbox</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=stila" id="stila">
+                        <label class="form-check-label" for="flexCheckDefault">stila</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=suncoat" id="suncoat">
+                        <label class="form-check-label" for="flexCheckDefault">suncoat</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=w3llpeople" id="w3llpeople">
+                        <label class="form-check-label" for="flexCheckDefault">w3llpeople</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=wet n wild" id="wet n wild">
+                        <label class="form-check-label" for="flexCheckDefault">wet n wild</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=zorah" id="zorah">
+                        <label class="form-check-label" for="flexCheckDefault">zorah</label><br>
+                        <input class="form-check-input" type="checkbox" value="brand=zorah biocosmetiques"id="zorah biocosmetiques">
+                        <label class="form-check-label" for="flexCheckDefault">zorah biocosmetiques</label>
+                    </div>
+            </div>
+
+               
+                    
+                
+
+                <div class="col">
+                    <div><label><h4>Price</h4></label>
+                    <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Price greater than</span>
+                    <input type="text" class="form-control" value="" placeholder="Enter price" >
+                  </div>
+                </div>
+            </div>
+
+
+                <div class="col">
+                    <div><label><h4>Rating</h4></label>
+                    <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Rating greaterthan</span>
+                    <input type="text" class="form-control" placeholder="Enter Ratings below 5" value="">
+                  </div>
+                </div>
+            </div>
+
+
+
+
+            <input id="submit" class="btn btn-primary" type="submit" value="Submit" onclick="fetchUrlCreator()">
+        </div>
+
+
+        <div>
+            <table border="1" id="table">
+                <thead>
+
+
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

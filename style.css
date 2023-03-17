@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+ 
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+
+  #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .input {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #ccc;
+  }
+  
+  #inputbox {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 300px;
+  }
+  
+  #profile {
+    margin-left: auto;
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 
+  #Filter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #checkbox {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    height: auto;
+  }
+  
+
+  .form-check {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .column {
+    flex: 1;
+  }
+  
+  .form-check-input {
+    margin-right: 10px;
+  }
+  
+  .form-check-label {
+    font-size: 16px;
+  }
+  #table{
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    display: flex;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    font-weight: 500;
+    cursor: pointer;
+    padding-bottom: 50px;
+    
+
+  }
+  
+  #submit {
+    text-align: center;
+  }
