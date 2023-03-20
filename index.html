@@ -24,18 +24,14 @@
             <input type="text" placeholder="Search" id="inputbox">
             <span id="profile"> <i class="fa-solid fa-user"></i> Login</span>
         </div>
-        <label id="Filter">
-            Filters
-        </label>
+        
 
         <div class="container text-center" id="checkbox">
+            <label id="Filter">Filters</label>
             <div class="row row-cols-4">
                 <div class="col">
-                    <label>
-                        <h4>Product</h4>
-                    </label>
+                        <label><h4>Product</h4></label>
                     <div class="form-check" style="overflow-y:auto;">
-
                         <input class="form-check-input" type="checkbox" value="product_type=Blush" id="Blush">
                         <label class="form-check-label" for="flexCheckDefault">Blush</label><br>
                         <input class="form-check-input" type="checkbox" value="product_type=Bronzer" id="Bronzer">
@@ -59,9 +55,11 @@
 
                     </div>
                 </div>
-                    <div class="col">
-                     <label><h4>Brand</h4></label>
-                        <div class="form-check" style="overflow-y:auto;">
+
+
+                <div class="col">
+                            <label><h4>Brand</h4></label>
+                    <div class="form-check" style="overflow-y:auto;">
                         <input class="form-check-input" type="checkbox" value="brand=almay" id="almay">
                         <label class="form-check-label" for="flexCheckDefault">almay</label><br>
                         <input class="form-check-input" type="checkbox" value="brand=alva" id="alva">
@@ -172,36 +170,67 @@
                         <input class="form-check-input" type="checkbox" value="brand=zorah biocosmetiques"id="zorah biocosmetiques">
                         <label class="form-check-label" for="flexCheckDefault">zorah biocosmetiques</label>
                     </div>
-            </div>
+                </div>
+             
 
                
                     
                 
 
-                <div class="col">
-                    <div><label><h4>Price</h4></label>
-                    <div class="input-group flex-nowrap">
-                    <span class="input-group-text" id="addon-wrapping">Price greater than</span>
-                    <input type="text" class="form-control" value="" placeholder="Enter price" >
-                  </div>
+            <div class="col">
+                <div><label><h4>Price</h4></label>
+                    <div class="form-check" style="overflow-y:auto;">
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=0&price_less_than=5">
+                        <label class="form-check-label" for="flexCheckDefault">0 - 5</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=5&price_less_than=10">
+                        <label class="form-check-label" for="flexCheckDefault">5 - 10</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=10&price_less_than=20">
+                        <label class="form-check-label" for="flexCheckDefault">10 - 20</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=20&price_less_than=30">
+                        <label class="form-check-label" for="flexCheckDefault">20 - 30</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=30&price_less_than=40">
+                        <label class="form-check-label" for="flexCheckDefault">30 - 40</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=40&price_less_than=50">
+                        <label class="form-check-label" for="flexCheckDefault">40 - 50</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=50&price_less_than=60">
+                        <label class="form-check-label" for="flexCheckDefault">50 - 60</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=60&price_less_than=70">
+                        <label class="form-check-label" for="flexCheckDefault">60 - 70</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=70&price_less_than=80">
+                        <label class="form-check-label" for="flexCheckDefault">70 - 80</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=80&price_less_than=90">
+                        <label class="form-check-label" for="flexCheckDefault">80 - 90</label><br>
+                        <input class="form-check-input" type="checkbox" value="price_greater_than=90&price_less_than=100">
+                        <label class="form-check-label" for="flexCheckDefault">90 - 100</label><br>
+                    </div>
                 </div>
             </div>
 
 
                 <div class="col">
                     <div><label><h4>Rating</h4></label>
-                    <div class="input-group flex-nowrap">
-                    <span class="input-group-text" id="addon-wrapping">Rating greaterthan</span>
-                    <input type="text" class="form-control" placeholder="Enter Ratings below 5" value="">
-                  </div>
+                        <div class="form-check" style="overflow-y:auto;">
+                            <input class="form-check-input" type="checkbox" value="rating_greater_than=0&rating_less_than=1">
+                            <label class="form-check-label" for="flexCheckDefault">0 - 1</label><br>
+                            <input class="form-check-input" type="checkbox" value="rating_greater_than=1&rating_less_than=2">
+                            <label class="form-check-label" for="flexCheckDefault">1 - 2</label><br>
+                            <input class="form-check-input" type="checkbox" value="rating_greater_than=2&rating_less_than=3">
+                            <label class="form-check-label" for="flexCheckDefault">2 - 3</label><br>
+                            <input class="form-check-input" type="checkbox" value="rating_greater_than=3&rating_less_than=4">
+                            <label class="form-check-label" for="flexCheckDefault">3 - 4</label><br>
+                            <input class="form-check-input" type="checkbox" value="rating_greater_than=4&rating_less_than=5">
+                            <label class="form-check-label" for="flexCheckDefault">4 - 5</label><br>
+                            
+                        </div>    
+                    </div>
                 </div>
-            </div>
 
 
 
 
             <input id="submit" class="btn btn-primary" type="submit" value="Submit" onclick="fetchUrlCreator()">
         </div>
+    </div>
 
 
         <div>
